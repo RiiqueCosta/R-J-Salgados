@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - RJ Doces</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>body { font-family: 'Inter', sans-serif; }</style>
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <header class="bg-white shadow-sm sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <i data-lucide="layout-dashboard" class="text-orange-600"></i>
+                <h1 class="text-xl font-bold text-gray-900">Painel Administrativo</h1>
+            </div>
+            <a href="../index.html" class="text-sm text-gray-500 hover:text-orange-600">Voltar para Loja</a>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto p-6">
+        <div class="flex space-x-4 mb-6 border-b">
+            <button class="pb-2 border-b-2 border-orange-600 text-orange-600 font-medium">Pedidos</button>
+            <!-- Products CRUD could be added here similar to React version -->
+        </div>
+
+        <div id="orders-list" class="space-y-4">
+            <div class="text-center py-10">Carregando pedidos...</div>
+        </div>
+    </main>
+
+    <script src="../assets/js/admin.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
