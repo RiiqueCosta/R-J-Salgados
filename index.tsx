@@ -1,15 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
 
-const rootElement = document.getElementById('root');
-if (!rootElement) {
-  throw new Error("Could not find root element to mount to");
-}
+// This file is intentionally left empty/neutralized because the application 
+// has been converted to a Vanilla JS + PHP structure for XAMPP compatibility.
+// The main logic is now in index.html and assets/js/app.js.
 
-const root = ReactDOM.createRoot(rootElement);
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+console.log('Running in Vanilla JS / PHP Mode');
